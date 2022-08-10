@@ -13,3 +13,40 @@ console.log(txtIn);
 
 const txtOut = `This is what we know about avacado : ${txtIn}`;
 fs.writeFileSync("output.txt", txtOut);
+
+
+--> Blocking and non-Blocking : Asynchronous behaviour of node-js : 
+  
+       Since Js uses single thread then synchronous ways is executing the code line by line and one line is executed then only the next line will
+       be executed. So this may lead to lag. This problem can be resolved by using asynchronous way in this we have a callback function and the code
+       will be executed in the backround.
+       
+const fs = require("fs");
+
+fs.readFile("input.txt", "utf-8", (err, data) => {
+  if (err) return console.log("ERROR!...");
+  console.log(data);
+  fs.writeFile("output2.txt", `The new File : ${data}`, "utf-8", (err) => {
+    console.log("File writen successfully...");
+  });
+});
+console.log("Reading file....");
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--> Creating a simple web server :   
+ 
+const http = require("http");
+
+const server = http.createServer((req, res) => {
+  res.end("Hello from the server....");
+});
+
+server.listen(8000, "127.0.0.1", () => {
+  console.log("Listening to the request on port number 8000");
+});
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
