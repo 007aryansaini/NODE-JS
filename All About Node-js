@@ -124,3 +124,39 @@ server.listen(8000, '127.0.0.1', () => {
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
       
+
+
+--> NPM ( Node Package Manager ) :  It is a command line interface app that automatically comes with NodesJS and which we use to install and manage 
+                                    open source pacakages.
+                                    
+                                    command -- npm init It will initialize npm package which contains data about the project and the packages installed.
+                                    
+                    There are two types of packages that we can install - simple dependencies and development dependencies.
+                    And alse there are two types of installs locally and globally. unlike local global installs are avaiable not only in project folder
+                    but anywhere in the entire machine.
+                    
+                    
+            --> Verions of the dependecies : Most of the dependencies uses semantic notations eg: ^1.18.11 - 1 is the major version , 18 is the minor version
+                                             and 11 is the patch version.
+                                             
+                                             ^ = for patch verions 
+                                             ~ = for minor and patch versions 
+                                             * = for all verions
+                                             
+                      --. Delete packages : We can also delete packages 
+                                  npm install express
+                                  npm uninstall express
+                                  
+                                  
+                                  
+               #Note : We do not have to share the node-module folder on the github or to other computer as it contains tons of file and each file may contains
+                       tons of code so you just need to share your project without node folder and then when you intsall your project again in your computer
+                       just run the command "npm install ". It will automatically includes all the node modules automatically.
+                       
+                       
+                       
+                       
+---------------------------------------------------------------------------------------------------------------------------------------------------                    
+                    
+                    
+                    
