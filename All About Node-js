@@ -168,10 +168,26 @@ server.listen(8000, '127.0.0.1', () => {
                                       . Register events callbacks
                                       . Start event loop
                                       
-                   #Note : The thread pool give us four additional thread that are completed from the main single thread and the event loop offload 
-                           heavy tasks to the event loop. and it is done automatically behind the scenes
+                   #Note : The thread pool give us four additional thread that are completely seprated from the main single thread and the event
+                           loop offload heavy tasks to the event loop. and it is done automatically behind the scenes
                     
                     
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
---> Event Loop : 
+--> Event Loop : All the code that is not in the top level and is inside callback function runs in the event loop.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+--> Let's start building the natours API :
+
+
+             What is express and why should we use it ?
+              
+             . Express is minimal Node.js framework, a higher level of abstraction.
+             . It contains a robust sets of features: complex routing, easier handling of request and responses, middleware , server-side rendering
+               etc.
+             . make it easy to organize our appplication in MVC archietecture.
+
+
+
