@@ -157,6 +157,21 @@ server.listen(8000, '127.0.0.1', () => {
                        
                        
 ---------------------------------------------------------------------------------------------------------------------------------------------------                    
+    
+    
+    --> Thread and thread pool :   If you run a node application it just run in a single thread.
+    
+                                   . In single thread there are various steps -
+                                      . Initialize program
+                                      . Execute 'top-level' code.
+                                      . Require Modules
+                                      . Register events callbacks
+                                      . Start event loop
+                                      
+                   #Note : The thread pool give us four additional thread that are completed from the main single thread and the event loop offload 
+                           heavy tasks to the event loop. and it is done automatically behind the scenes
                     
                     
-                    
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+--> Event Loop : 
