@@ -225,4 +225,14 @@ app.listen(port, () => {
         
         1. Seprate API into logical resources : Object or representaion of something, which has data associated to it, Anything that can be named 
                                                 can be termed as resource.
-        2. Explore- Structured-based URL's  : 
+        2. Explore- Structured-based URL's  :  Use structured URL's. Eg: https://www.natours.com/addNewTour
+        
+        3. Use HTTP methods : Use http methods example post and get and not the verbs at the endPoints.
+                              /addNewTour --> POST  /tours   --Create
+                              /getTour   --> GET   /tours   --Read
+                              /updateTour -->  PUT  /tours  --update
+                                               PATCH /tours 
+                              /deleteTour --> DELETE /tours --delete
+        
+        4. Send data as JSON : JSON is a very light weight data interchange format which is heavily used by web API's
+        5.  Be Stateless : The server should not remember the previous state. It shoud be on the client side 
