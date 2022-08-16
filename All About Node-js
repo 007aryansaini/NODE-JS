@@ -190,4 +190,39 @@ server.listen(8000, '127.0.0.1', () => {
              . make it easy to organize our appplication in MVC archietecture.
 
 
+const express = require('express');
+const app = express();
 
+app.get('/', (req, res) => {
+  res
+    .status(200)
+    .json({ message: 'Hello from the server side...', app: 'nators' });
+});
+
+app.post('/', (req, res) => {
+  res.send('You can post');
+});
+
+const port = 3000;
+app.listen(port, () => {
+  console.log(`App running on port ${port}`);
+});
+
+
+--> APPLICATION PROGRAMMING INTERFACE ( API ) : It is a piece of software that is used by another peiece of software, in order to allow applications
+                                                to talk to each other.
+                                                
+                                                
+      REST Archietecture : ( Representaional State Transfer ) 
+      
+      There are 5 principles : 
+        1. Seprate API into logical resources
+        2. Explore- Structured-based URL's
+        3. Use HTTP methods
+        4. Send data as JSON
+        5. Be Stateless
+        
+        
+        1. Seprate API into logical resources : Object or representaion of something, which has data associated to it, Anything that can be named 
+                                                can be termed as resource.
+        2. Explore- Structured-based URL's  : 
