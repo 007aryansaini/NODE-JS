@@ -244,3 +244,15 @@ app.listen(port, () => {
 --> Middleware : Middleware functions are functions that have access to the request object (req), the response object (res), and the next 
                  middleware function in the application’s request-response cycle. These functions are used to modify req and res objects for
                  tasks like parsing request bodies, adding response headers, etc.
+                 
+                 
+                 . We use 'use' method to use middleware basically adding middleware to our middleware stack.
+                 . The simple middleware functions got applied to every single request.
+                 . If we are defining a middleware after some route and in the route we are sending back the response this will end the request
+                   response cycle and this middleware function will never get executed. So the order of the middleware is much much important.
+                 . We can add current time to the req by using middleware. 
+                   
+app.use((req, res, next) => {
+  req.requestTime = new Date().toISOString();
+  next();
+});
