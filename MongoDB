@@ -1,0 +1,9 @@
+--> MongoDB : It is a document database with the scalability and flexibility that you want with the querying and indexing that you need.
+
+
+--> Key MongoDB features :   
+     
+        . Document based : It stores data in document. ( field-value pair data structure, NoSQL ) 
+        . Scalable : very easy to distribute data across multiple machine as your user and the amount of data increases.
+        . Flexible : No document data schema require, so each document can have different number and type of fields.
+        . Performant : Embeded data model, indexing , sharding , flexible document, native duplication etc. 
