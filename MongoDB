@@ -7,3 +7,5 @@
         . Scalable : very easy to distribute data across multiple machine as your user and the amount of data increases.
         . Flexible : No document data schema require, so each document can have different number and type of fields.
         . Performant : Embeded data model, indexing , sharding , flexible document, native duplication etc. 
+        
+    Data is stored in BSON format which is similar to JSON. and it is typed and stored in key value pair. 
